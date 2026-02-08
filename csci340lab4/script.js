@@ -8,7 +8,7 @@ function newQuote() {
   $("#quoteText").text("Loading...");
   $("#quoteAuthor").text("—");
 
-  $.getJSON("https://stoic.tekloon.net/stoic-quote")
+  $.getJSON("https://random.dog/woof.json")
     .done(function(resp) {
       const data = resp && resp.data ? resp.data : {};
       $("#quoteText").text('"' + (data.quote || "No quote returned.") + '"');
