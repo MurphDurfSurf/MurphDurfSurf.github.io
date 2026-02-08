@@ -4,31 +4,28 @@ function newKeanu() {
   $("#keanuImg").attr("src", url);
 }
 
-function newQuote() {
-  $("#quoteText").text("Loading...");
-  $("#quoteAuthor").text("—");
-
+function newDog() {
   $.getJSON("https://random.dog/woof.json")
     .done(function(resp) {
-      const data = resp && resp.data ? resp.data : {};
-      $("#quoteText").text('"' + (data.quote || "No quote returned.") + '"');
-      $("#quoteAuthor").text("— " + (data.author || "Unknown"));
+      if (resp.url.endsWith(".mp4") || resp.url.endsWith(".webm")) { // Sometimes has mp4 or webm videos, this skips them.
+        newDog();
+        return;
+      }
+      $("#dogImg").attr("src", resp.url);
     })
     .fail(function() {
-      $("#quoteText").text("Could not load quote right now. Try again.");
-      $("#quoteAuthor").text("— Network error");
+      alert("Could not load dog image.");
     });
 }
 
 function clearAll() {
-  $("#quoteText").text('Click “New Quote” to get a quote.');
-  $("#quoteAuthor").text("—");
+  $("#dogImg").attr("src", "https://placekeanu.com/480/360");
   $("#keanuImg").attr("src", "https://placekeanu.com/480/360");
 }
 
 $(function() {
   $("#btnKeanu").on("click", newKeanu);
-  $("#btnQuote").on("click", newQuote);
-  $("#btnBoth").on("click", function() { newKeanu(); newQuote(); });
+  $("#btnDog").on("click", newDog);
+  $("#btnBoth").on("click", function() { newKeanu(); newDog(); });
   $("#btnClear").on("click", clearAll);
 });
