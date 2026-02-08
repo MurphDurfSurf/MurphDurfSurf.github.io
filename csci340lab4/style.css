@@ -1,0 +1,48 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px; /* padding requirement */
+}
+
+.button-row {
+  margin: 16px 0; /* margin requirement */
+}
+
+button {
+  padding: 10px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 16px;     /* padding requirement */
+  margin: 16px 0;    /* margin requirement */
+}
+
+img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  display: block;
+  margin-top: 12px;
+}
+
+.muted {
+  color: rgba(226,232,240,0.7);
+}

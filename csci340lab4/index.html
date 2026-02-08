@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keanu Stoic Generator</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Keanu Stoic Generator</h1>
+    <h2>Random Keanu + Random Stoicism</h2>
+
+    <div class="button-row">
+      <button id="btnQuote">New Quote</button>
+      <button id="btnKeanu">New Keanu</button>
+      <button id="btnBoth">Both</button>
+      <button id="btnClear">Clear</button>
+    </div>
+
+    <h3>Your Results</h3>
+
+    <div class="card">
+      <h4>Keanu</h4>
+      <img id="keanuImg" src="https://placekeanu.com/480/360" alt="Random Keanu image">
+    </div>
+
+    <div class="card">
+      <h4>Stoic Quote</h4>
+      <p id="quoteText">Click “New Quote” to get a quote.</p>
+      <p id="quoteAuthor" class="muted">—</p>
+    </div>
+
+    <p class="muted">
+      Image source: placekeanu.com. Quotes: stoic.tekloon.net.
+    </p>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
