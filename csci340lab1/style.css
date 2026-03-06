@@ -1,36 +1,58 @@
-
-
-.word-list {
-    font-size: large;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
+body {
+    background-color: #f8f4ef;
+    color: #2f2f2f;
+    font-family: 'Merriweather', serif;
     margin: 0;
 }
 
-.jumbotron {
-    display: block;
-    background-color: #519be6;
-    padding: 2rem 1rem;
-    border-radius: 0.3rem;
-    justify-content: center;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-
-.container {
-    justify-content: center;
+.hero-section {
+    background: linear-gradient(135deg, #d9c5b2, #ede3d5);
+    padding: 40px 0;
 }
 
-.italic {
+.hero-section h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #5a4a42;
+}
+
+.intro-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.noun-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fffdf9;
+}
+
+.noun-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.definition {
     font-style: italic;
+    color: #6b5b53;
 }
 
-li {
-    color: #000000
-}
-
-row {
-    display: flex;
-    justify-content: center;
-    outline: peachpuff 2px solid;
+footer {
+    background-color: #d9c5b2;
+    color: #2f2f2f;
 }

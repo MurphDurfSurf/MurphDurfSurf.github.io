@@ -4,31 +4,123 @@
     <title>Some Fantastic Nouns For Thee</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="text-center">Some Fantastic Nouns For Thee</h1>
-    <h2 class="text-center">What Nouns will we discuss?</h2>
-    <section class="jumbotron">
-        <div class="container">
-            <ul>
-                <li>Stew</li>
-                <li>Head</li>
-                <li>Earth</li>
-            </ul>
+
+    <!-- Header -->
+    <header class="hero-section text-center">
+        <div class="container py-5">
+            <h1 class="display-4">Some Fantastic Nouns For Thee</h1>
+            <h2 class="subtitle">Three nouns, three meanings, and three reasons they matter</h2>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <div class="intro-box p-4">
+                    <h3 class="mb-3">What nouns will we discuss?</h3>
+                    <p class="mb-0">
+                        This page focuses on three simple but meaningful nouns:
+                        <strong>Stew</strong>, <strong>Head</strong>, and <strong>Earth</strong>.
+                        Each one has a definition, an image, and a short reflection explaining why it stands out.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="container">
-        <div class="row">
-            <h1>Stew</h1>
-            <h3 class="italic">a dish of meat or vegetables (or both) cooked slowly in liquid in a closed dish or pan.</h3>
-            <p>I am quite fond of stew. It has its merits in the simple fact that it is, funnily enough, simple. Stew has been the backbone
-                of many peoples dinners, suppers, and maybe even breakfasts throughout history. It can be anything the heart desires, from beef to
-                chicken to vegetarian. It is the ultimate idea of what food is, a mixture of ingredients that by themselves are not much, but when
-                combined and cooked together become something greater than the sum of their parts. A good stew melts the heart and warms the soul.
-            </p>
+
+    <!-- Noun Cards -->
+    <section class="container mb-5">
+        <div class="row g-4">
+
+            <!-- Stew -->
+            <div class="col-md-4">
+                <div class="card noun-card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="A bowl of stew">
+                    <div class="card-body">
+                        <h3 class="card-title">Stew</h3>
+                        <p class="definition">
+                            a dish of meat or vegetables (or both) cooked slowly in liquid in a closed dish or pan.
+                        </p>
+                        <p class="card-text">
+                            I am quite fond of stew. It has its merits in the simple fact that it is, funily enough, simple.
+                            Stew has been the backbone of many peoples dinners, suppers, and maybe even breakfasts throughout history.
+                            It can be anything the heart desires, from beef to chicken to vegetarian.
+                        </p>
+                        <p class="card-text">
+                            It is the ultimate idea of what food is, a mixture of ingredients that by themselves are not much,
+                            but when combined and cooked together become something greater than the sum of their parts.
+                            A good stew melts the heart and warms the soul.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Head -->
+            <div class="col-md-4">
+                <div class="card noun-card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="The Human Head">
+                    <div class="card-body">
+                        <h3 class="card-title">Head</h3>
+                        <p class="definition">
+                            the upper part of the human body containing the brain, eyes, ears, nose, and mouth.
+                        </p>
+                        <p class="card-text">
+                            The head is more than just a body part. It holds thought, memory, and imagination.
+                            It is where people process the world around them and where emotion often first shows itself.
+                        </p>
+                        <p class="card-text">
+                            In many ways, the head represents identity. It contains the features by which we recognize one another,
+                            and it also symbolizes intellect, expression, and personality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Earth -->
+            <div class="col-md-4">
+                <div class="card noun-card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="The Earth from space">
+                    <div class="card-body">
+                        <h3 class="card-title">Earth</h3>
+                        <p class="definition">
+                            the planet on which we live; the world.
+                        </p>
+                        <p class="card-text">
+                            Earth is the largest of these nouns because it contains everything else.
+                            It is home. Every person, every city, every meal, and every thought exists 
+                            somewhere on Earth.
+                        </p>
+                        <p class="card-text">
+                            Thinking about Earth can make everyday life feel both smaller and more meaningful.
+                            It reminds us that ordinary things are part of something far larger than ourselves.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p class="mb-0">Created with Bootstrap, custom CSS, and Google Fonts</p>
+        <p class="mb-0">A Website by Mason Murphy</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>    
+</body>
 </html>
+
